@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    --background: #0B0B0B;
+    --primary: #97EDAA;
+    --background-secondary: #181818;
+    --padding: 2rem 20rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo';
+    background-color: var(--background);
+}
+
+.logo{color: var(--primary);}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+h1{
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.button, .button-reverse{
+    color: var(--background);
+    background-color: var(--primary);
+    text-decoration: none;
+    padding: 1vh 2.5vw;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 500;
+    width: fit-content;
+    font-size: 18px;
+    border: var(--background) 2px solid;
+}
+
+.button-reverse{
+    color: var(--primary);
+    background-color: var(--background);
+    border: var(--primary) 2px solid;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    margin-bottom: 1rem;
+}
+
+nav ul{display: flex;}
+
+nav ul li{
+    list-style: none;
+    margin: 0 .5rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.landing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+}
+
+.landing .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .container p, .landing .container h1{margin: .2rem 0;}
+
+.landing .container h1{margin-bottom: 2rem;}
+
+.landing .container .button{margin-top: 2rem;}
+
+.hero{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vh;
+    text-align: center;
+}
+
+h2{
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.hero .grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.hero .destaque, .projects .destaque{
+    font-size: 20px;
+    font-weight: 600;
+}
+.hero p{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.projects{
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects h2{
+    margin-bottom: 3vh;
+}
+
+.projects .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+}
+
+.projects .grid .item p{
+    line-height: 150%;
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 300;
+}
+
+.projects .grid .item .destaque{
+    font-size: 20px;
+    color: white;
+}
+
+.projects .grid .item img{
+    height: 12vw;
+}
+
+.projects .grid .item .buttons{
+    margin: 2rem 0;
+}
+
+.service{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.service h2{margin-bottom: 2vh;}
+
+.service .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+}
+
+.service .grid .container, .service .grid .container p, .service .grid .container img{background-color: var(--background-secondary);}
+
+.service .grid .container{
+    padding: 2vw;
+    border-bottom: 2px solid var(--primary);
+    
+}
+
+.service .grid .container p{
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.skill{
+    display: flex;
+    padding: var(--padding);
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.skill .grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2vw;
+}
+
+.skill .grid .container{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill .grid .container img, .skill .grid .container{background-color: var(--background-secondary);}
+
+.skill .grid .container{
+    margin: 3vh 0;
+    padding: 7vh 2vw;
+}
+
+footer{
+    background-color: var(--background-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+footer span{
+    font-weight: 700;
+    color: var(--primary);
+}
+
